@@ -6,6 +6,7 @@ import { DontCommonsComponent } from './pages/dont-commons/dont-commons.componen
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { UpperCasePipes } from './pipes/uppercase.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     DontCommonsComponent,
     BasicsComponent,
     OrdersComponent,
+    UpperCasePipes,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
