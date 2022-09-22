@@ -1,0 +1,55 @@
+<div class="text-layout">
+  <h1>Basic pipes</h1>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card header="uppercase" [subheader]="upperCaseName | uppercase">
+      {{ upperCaseName | uppercase }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="lowercase" [subheader]="lowerCaseName | lowercase">
+      {{ lowerCaseName | lowercase }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="titlecase" [subheader]="titleCaseName | titlecase">
+      {{ titleCaseName | titlecase }}
+    </p-card>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h1>Date pipes</h1>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>Date</li>
+        <li>Date</li>
+      </ul>
+      <hr />
+      <ul>
+        <li></li>
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date: "short" }}</li>
+        <li>{{ date | date: "h:mm a z" }}</li>
+      </ul>
+      <hr />
+      <ul>
+        <li>{{ date | date: "long":"GMT-6" }}</li>
+      </ul>
+    </p-card>
+  </div>
+</div>
