@@ -7,6 +7,8 @@ import { BasicsComponent } from './pages/basics/basics.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { UpperCasePipes } from './pipes/uppercase.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrdersPipe } from './pipes/orders.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { UpperCasePipes } from './pipes/uppercase.pipe';
     BasicsComponent,
     OrdersComponent,
     UpperCasePipes,
+    FlyPipe,
+    OrdersPipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
